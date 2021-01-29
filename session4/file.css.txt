@@ -1,0 +1,5 @@
+body{background-color:yellow}
+h1{font-size:30pt}
+h2{color:blue}
+p{margin-left:46px}
+hr{width:70%;height:6px:color:green}
