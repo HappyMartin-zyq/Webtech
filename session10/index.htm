@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Yanqi Zhang</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dancing%20Script">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <style>
+        h1{font-family:'Dancing Script'}
+    body{background-color:blue;}
+    h1{text-align:center;}
+    h2{font-family:verdana;font-size:22pt;color:yellow;}
+    p{font-family:verdana;font-size:12pt;text-indent:20px;}
+    hr{width:72%;color:red;height:6px;background-color:red;}
+    .redbord{border:10px solid red}
+    body{background-image:url('float1.gif');background-repeat:no-repeat;background-attachment:fixed}
+    span{font-weight:800;font-style:italic}
+    span{font-variant:small caps;font-style:italic;color:silver}
+    </style>
+    <script>
+
+        function ChgStyle()
+        {
+         document.getElementById("myh1").style.color="green";
+         document.getElementById("myh1").style.font="30pt 'Comic Sans MS'";
+         document.getElementById("myh1").style.textAlign="center";
+        } 
+        function redarrow()
+		{
+			document.getElementById("myimage").src="Saxophone.jpg";
+		}
+
+ 
+      
+     </script>		
+</head>
+<body>
+    <h1 style="font-style:normal; font-weight:border;" id="myh1" onclick="ChgStyle()" class="redbord">my hometowm is <span>Liaoning, China,</span><br> my contact email assdress is yzhang6@babson.edu</h1><hr>
+        <p>I really like play the saxophone and oboe</p><hr>
+<h1>Below is my picture</h1>
+<p class="redbord">Here is an image I upload from my computer.
+    <img id='myimage' src="myself_20210122091450.jpg" alt="#myself" onmouseover="redarrow()" />>.
+
+    <img src="myself_20210122091450.jpg" usemap="#image-map" alt="picture of me">
+
+    <map name="image-map">
+        <area alt="picture of me" title="pictur of me" href="https://en.wikipedia.org/wiki/Boston"
+        coords="240,600,300,780" shape="rect">
+        <area alt="play card" title="myself" href="http://www.babson.edu" coords="230,530,345,590"  shape="rect">
+    </map>
+
+
+</p>
+<h1>Link example page 1</h1>
+<p>Go to <a href="file:///C:/Users/Student/Desktop/Web%20Tehnology/session2/interests.html">Link Page 2</a></p>
+</body>
+</html>

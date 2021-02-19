@@ -18,20 +18,36 @@
     span{font-weight:800;font-style:italic}
     span{font-variant:small caps;font-style:italic;color:silver}
     </style>
+    <script>
+
+        function ChgStyle()
+        {
+         document.getElementById("myh1").style.color="green";
+         document.getElementById("myh1").style.font="30pt 'Comic Sans MS'";
+         document.getElementById("myh1").style.textAlign="center";
+        } 
+        function redarrow()
+		{
+			document.getElementById("myimage").src="Saxophone.jpg";
+		}
+
+ 
+      
+     </script>		
 </head>
 <body>
-    <h1 style="font-style:normal; font-weight:border;" class="redbord">my hometowm is <span>Liaoning, China,</span><br> my contact email assdress is yzhang6@babson.edu</h1><hr>
+    <h1 style="font-style:normal; font-weight:border;" id="myh1" onclick="ChgStyle()" class="redbord">my hometowm is <span>Liaoning, China,</span><br> my contact email assdress is yzhang6@babson.edu</h1><hr>
         <p>I really like play the saxophone and oboe</p><hr>
 <h1>Below is my picture</h1>
 <p class="redbord">Here is an image I upload from my computer.
-    <img src="myself_20210122091450.jpg" myself_20210122091450="#myself">.
+    <img id='myimage' src="myself_20210122091450.jpg" alt="#myself" onmouseover="redarrow()" />>.
 
     <img src="myself_20210122091450.jpg" usemap="#image-map" alt="picture of me">
 
     <map name="image-map">
         <area alt="picture of me" title="pictur of me" href="https://en.wikipedia.org/wiki/Boston"
-        coords="240,600,300,780" shapes="rect">
-        <area alt="play card" title="myself" href="http://www.babson.edu" coords="230,530,345,590" alt="demo" shape="rect">
+        coords="240,600,300,780" shape="rect">
+        <area alt="play card" title="myself" href="http://www.babson.edu" coords="230,530,345,590"  shape="rect">
     </map>
 
 
