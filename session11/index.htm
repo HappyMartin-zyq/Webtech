@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Yanqi Zhang</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dancing%20Script">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <style>
+        h1{font-family:'Dancing Script'}
+    body{background-color:blue;}
+    h1{text-align:center;}
+    h2{font-family:verdana;font-size:22pt;color:yellow;}
+    p{font-family:verdana;font-size:12pt;text-indent:20px;}
+    hr{width:72%;color:red;height:6px;background-color:red;}
+    .redbord{border:10px solid red}
+    body{background-image:url('float1.gif');background-repeat:no-repeat;background-attachment:fixed}
+    span{font-weight:800;font-style:italic}
+    span{font-style:italic;color:silver}
+    </style>
+    <script>
+
+        function ChgStyle()
+        {
+           x=document.getElementById("myh1")
+            
+         x.style.color="green";
+         x.style.font="30pt 'Comic Sans MS'";
+         x.style.textAlign="center";
+        } 
+        function redarrow()
+		{
+			document.getElementById("myimage").src="Saxophone.jpg";
+		}
+        function changeh1()
+	   {
+		document.getElementById("view1").style.display = "none";
+		document.getElementById("view2").style.display = "inline";
+	   } 
+
+ 
+      
+     </script>		
+</head>
+<body>
+    <h1 style="font-style:normal" id="myh1" onclick="ChgStyle()" class="redbord">my hometowm is <span>Liaoning, China,</span><br> my contact email assdress is yzhang6@babson.edu</h1><hr>
+        <p>I really like play the saxophone and oboe</p><hr>
+<h1>Below is my picture</h1>
+<h2><span id="view1">See this</span><span id="view2" style="display:none">See that</span></h2>
+<p>
+    <button onclick="changeh1()">Click Here</button>
+</p>
+
+<p class="redbord">Here is an image I upload from my computer.
+    <img id='myimage' src="myself_20210122091450.jpg" alt="#myself" onmouseover="redarrow()" />>.
+
+    <img src="myself_20210122091450.jpg" usemap="#image-map" alt="picture of me">
+
+    <map name="image-map">
+        <area alt="picture of me" title="pictur of me" href="https://en.wikipedia.org/wiki/Boston"
+        coords="240,600,300,780" shape="rect">
+        <area alt="play card" title="myself" href="http://www.babson.edu" coords="230,530,345,590"  shape="rect">
+    </map>
+
+
+</p>
+<h1>Link exampjle page 1</h1>
+<p>Go to <a href="file:///C:/Users/Student/Desktop/Web%20Tehnology/session2/interests.html">Link Page 2</a></p>
+</body>
+</html>
