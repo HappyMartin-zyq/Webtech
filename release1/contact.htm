@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+    
+-->
+<head>
+<meta charset="utf-8">
+
+<title>Term_project_1</title>
+
+<meta name="description" content="a comparison between Hilton and Marriott hotels" />
+<meta name="keywords" content="Hilton, Marriott, hotels" />
+<meta name="author" content="Zhang, Yanqi" />
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+        <img src="http://new-hls.s3.amazonaws.com/hls/data/1617/website/general/bn/1.jpg" usemap="#townareas" alt="Cinque Terre"  width="1000" height="300">
+        <map name="townareas" >
+            <area shape="rect" coords="0,0,1300,220" href="https://en.wikipedia.org/wiki/Hilton_Worldwide" alt="hist"/>
+            <area shape="rect" coords="0,250,1300,450" href="https://en.wikipedia.org/wiki/Marriott_International" alt="demog"/>
+        </map>
+        <div class="topcenter">
+            <div class="title" style='text-align:center;  background-color: #f5ecec8c;'>
+                <p>Hilton Worldwide holdings, Inc</p> 
+                <strong>VS</strong>
+                <p>Marriott international, Inc</p>
+            </div>
+            
+        </div>
+            <div class="topleft">
+            <div class="dropdown">
+                <h4 style="  background: #e0e9e9; color: rgba(22, 20, 20, 0.932);">Website Catalog</h4>
+                <div class="dropdown-content">
+                    <ul>
+                    <li><a href="index.htm">Home </a></li>
+                    <li><a href="Hilton.htm">Hilton </a></li>
+                    <li>
+                    <ul style="font-size: small;">
+                       
+                        <li>Waldorf Astoria Hotels and Resorts</li>
+                        <li>Hilton Hotels & Resorts</li>
+                        <li>Hampton by Hilton</li>
+                        
+                
+                    </ul>
+                    </li>
+                    <li><a href="Marriott.htm">Marriott </a></li>
+                    <li>
+                    <ul style="font-size: small;">
+                       
+                        <li>JW Marriott Hotels</li>
+                        <li>Marriott Hotels & Resorts</li>
+                        <li>Residence Inn by Marriott</li>
+                 
+                    </ul>
+                    </li>
+                    <li><a href="contact.htm">Contact Us </a></li>
+                    <li><a href="about_me.htm">About Me</a></li>
+                    <li><a href="#">Credit</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+    </div>
+
+<form action="mailer.php" method="post">
+    <fieldset>
+    <legend>Contact Information</legend>
+    <table style="margin-left:50px">
+    <tbody><tr><td class="ar">Your Name: </td><td><input type="text" name="YourName" size="30"></td></tr>
+    <tr><td class="ar">EMail Address: </td><td><input type="text" name="email" size="30"></td></tr>
+    <tr><td class="ar">Phone: </td><td><input type="text" name="phone" size="30"></td></tr>
+    <tr><td>Perferred contact: </td><td style="padding-left:30px">EMail <input type="radio" name="pcontact" value="e"> Phone 
+        <input type="radio" name="pcontact" value="p"></td></tr>
+    </tbody></table>
+    </fieldset>
+    <p>
+    Which hotel do you like best?
+    <select name="satisfaction">
+        <option value="vs">Hilton</option>
+        <option value="s">Marriott</option>
+
+    </select></p>
+    <p>Please explain your choice above:</p>
+    <p><textarea name="comments" rows="5" cols="60"></textarea></p>
+    <p>What aspect do you think is important (Select all that apply)?
+    <br>
+    Room <input type="checkbox" name="kit" value="kitchen"> Dining Room <input type="checkbox" name="dr" value="dr">
+    Service <input type="checkbox" name="lr" value="lr"> Swimming Pool <input type="checkbox" name="of" value="office">
+    Other <input type="checkbox" name="other" value="other">
+    </p>
+    <p style="text-align:center"><input type="submit" name="Submit" value="Submit">&nbsp;&nbsp;&nbsp;<input type="reset" name="Reset" value="Reset"></p> 
+    </form>
+
+
+</body>
+</html>
+		
