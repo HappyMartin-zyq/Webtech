@@ -18,7 +18,7 @@
 		function draw(){
 
 		if (x<10 && document.getElementById('g').value!="w"){
-			document.getElementById('gallows').src='hang'+x+'.GIF'
+			document.getElementById('gallows').src='1hang'+x+'.GIF'
 			x=x+1
 			alert('wrong')
 		}
@@ -39,7 +39,7 @@
 
 	<p style="font-size:13pt; ">Guess the hidden word</p>
 	<p style="font-size:13pt; ">Hidden Word: <span id="goodguesses"></span></p>
-		<p><img src="hang0.GIF" alt="gallows" id="gallows" /></p>
+		<p><img src="1hang0.GIF" alt="gallows" id="gallows" /></p>
     <p>Guess: <input type="text" name="g" id="g" size="1" maxlength="1"></p>
     <p><button onclick='draw()'>Guess</button></p>
 
