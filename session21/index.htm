@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Page title goes here</title>
+
+	<style>
+	/* Your styles go here */
+	#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+.intro {
+  font-size: 150%;
+  color: red;
+}
+	</style>
+	
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		$("#hide").click(function(){
+			$("tr:odd").hide();
+		});
+		$("tr").dblclick(function(){
+		$(this).slidedown()
+		});
+		$("#show").click(function(){
+			$("tr:odd").css('background-color','yellow');
+			$('*').show()
+		});
+		$("#flip").click(function(){
+  	  $("#panel").slideDown("slow");
+  		});
+		  $("button").click(function(){
+    $("p").html("Hello <b>world!</b>");
+  });
+
+  $("#btn2").click(function(){
+    $("ol").append("<li>Appended item</li>");
+  });
+  $("#btn2").click(function(){
+    $("p").after("<p>Hello world!</p>");
+  });
+  $("button").click(function(){
+    $("p:first").addClass("intro");
+  });
+  $("button").click(function(){
+    $("p").animate({left: '250px'});
+  });
+  $("button").click(function(){
+    $("#div1").delay("slow").fadeIn();
+    $("#div2").delay("fast").fadeIn();
+    $("#div3").delay(800).fadeIn();
+    $("#div4").delay(2000).fadeIn();
+    $("#div5").delay(4000).fadeIn();
+  });
+		});
+	/* Your additional JavaScript goes here */
+	</script>
+  </head>
+
+  <body>
+	<!-- Your HTML goes here -->
+	<div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!</div>
+<button>Change content of all p elements</button>
+<p style='position:absolute'>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+<p>This example sets different speed values for the delay() method.</p>
+<button>Click to fade in boxes with a delay</button>
+<br><br>
+
+<div id="div1" style="width:90px;height:90px;display:none;background-color:black;"></div><br>
+<div id="div2" style="width:90px;height:90px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:90px;height:90px;display:none;background-color:blue;"></div><br>
+<div id="div4" style="width:90px;height:90px;display:none;background-color:red;"></div><br>
+<div id="div5" style="width:90px;height:90px;display:none;background-color:purple;"></div><br>
+
+<button id="btn2">Append list item</button>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+	<table >
+		<tr class='odd'>
+		  <th>Firstname</th>
+		  <th>Lastname</th> 
+		  <th>Age</th>
+		</tr>
+		<tr>
+		  <td>Jill</td>
+		  <td>Smith</td>
+		  <td>50</td>
+		</tr>
+		<tr class='odd'>
+		  <td>Eve</td>
+		  <td>Jackson</td>
+		  <td>94</td>
+		</tr>
+		<tr>
+		  <td>John</td>
+		  <td>Doe</td>
+		  <td>80</td>
+		</tr>
+	  </table>
+
+	  <button id='hide'>Hide Odd</button>
+	  <button id='show'>Show All</button>
+  </body>
+</html>
