@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title> 
+  <!--  Bootstrap2.htm -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style type="text/css">
+  img {
+
+  width: 200px;
+  height: 200px;
+}
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+
+
+
+  $(function() {
+  
+  $("#ss").html("This is paragraph #1" );
+});
+$(document).ready(function(){
+  $("#first").click(function(){
+    $("#first").attr("src","2.jpg");
+  });
+});
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+    </div>
+    </nav>
+  
+      
+<div class="container">
+  <h1>My first Bootstrap website!</h1>
+  <div class="row">
+    <div class="col-xs-4" style="background-color:lavender;">
+      <p>This is going to be a subtitle </p>
+      <p id='ss'>This is first paragragh.</p>
+  <p>This is second paragraph.</p>
+    </div>
+    
+  
+    <div class="col-xs-6" style="background-color:red">
+      <p>This is going to be a subtitle </p>
+      <p>This is third paragraph.</p>
+      <p>This is fourth paragraph.</p>
+    </div>
+    <div class="col-xs-2" style="background-color:rgb(110, 128, 61);">
+      <p>This is going to be a subtitle </p>
+      <p>This is fifth paragraph.</p>
+    </div>
+  </div>
+
+  <div class="container">
+      <div class="jumbotron">
+          <h1>My first Bootstrap website!</h1> 
+          <p>This is going to be a subtitle.</p>
+      </div>
+
+    <div class='row'>
+      <div class="col-xs-4" style="background-color:lavender;">
+        <img id='first' src="1.jpg" alt="Italian Trulli">
+      </div>
+      <div class="col-xs-4" style="background-color:rgb(72, 72, 143);">
+        <img id='second' src="2.jpg" alt="Italian Trulli">
+      </div>
+      <div class="col-xs-4" style="background-color:rgb(71, 138, 86);">
+        <img src="download.jpg" alt="Italian Trulli">
+      </div>
+     
+
+    </div>
+
+  
+ 
+  
+</div>
+</div>
+
+</body>
+</html>
