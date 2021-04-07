@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--
+    
+-->
+<head>
+<meta charset="utf-8">
+
+<title>Term_project_1</title>
+
+<meta name="description" content="a comparison between Hilton and Marriott hotels" />
+<meta name="keywords" content="Hilton, Marriott, hotels" />
+<meta name="author" content="Zhang, Yanqi" />
+<link rel="stylesheet" href="style.css">
+<script>
+    function selectBGcolor() 
+{
+         var bgColors = new Array("green","yellow","blue","pink","red","orange");
+         var b = document.getElementById("bod");
+         b.style.backgroundColor=bgColors[Math.floor(Math.random()*6)];
+}
+
+    	   var fz=10;  // This state variable will keep track of the font size
+	  
+           function resize()  //This function will add 10pt to the font size of the paragraph
+	   {
+		fz=fz+1;   // Here's where it adds 10 to the variable keeping track of font size
+		myp=document.getElementById("hi");
+		myp.style.fontSize=fz+"pt";   //Here's where it changes the font size
+		if (fz <= 20)
+		{
+		     setTimeout("resize()",100)  //Ticks in 100ms then runs the resize() function
+		}
+	}
+
+     
+ 
+    function p3(){
+		
+	
+		
+		if(document.getElementById('sat').value=='v'){
+			alert('best hotel must be selected ')
+		}
+		
+
+		else{return ture}
+		
+		
+		return false;
+
+	
+		
+	}
+
+
+
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</head>
+
+
+<body onload='resize();selectBGcolor();'>
+
+    <div class="container">
+        <img src="http://new-hls.s3.amazonaws.com/hls/data/1617/website/general/bn/1.jpg" usemap="#townareas" alt="Cinque Terre"  width="1000" height="300">
+        <map name="townareas" >
+            <area shape="rect" coords="0,0,1300,220" href="https://en.wikipedia.org/wiki/Hilton_Worldwide" alt="hist"/>
+            <area shape="rect" coords="0,250,1300,450" href="https://en.wikipedia.org/wiki/Marriott_International" alt="demog"/>
+        </map>
+        <div class="topcenter">
+            <div class="title" style='text-align:center;  background-color: #f5ecec8c;'>
+                <p>Hilton Worldwide holdings, Inc</p> 
+                <strong id='bod'>VS</strong>
+                <p>Marriott international, Inc</p>
+            </div>
+            
+        </div>
+            <div class="topleft">
+            <div class="dropdown">
+                <h4 style="  background: #e0e9e9; color: rgba(22, 20, 20, 0.932);">Website Catalog</h4>
+                <div class="dropdown-content">
+                    <ul>
+                    <li><a href="index.htm">Home </a></li>
+                    <li><a href="Hilton.htm">Hilton </a></li>
+                    <li>
+                    <ul style="font-size: small;">
+                       
+                        <li>Waldorf Astoria Hotels and Resorts</li>
+                        <li>Hilton Hotels & Resorts</li>
+                        <li>Hampton by Hilton</li>
+                        
+                
+                    </ul>
+                    </li>
+                    <li><a href="Marriott.htm">Marriott </a></li>
+                    <li>
+                    <ul style="font-size: small;">
+                       
+                        <li>JW Marriott Hotels</li>
+                        <li>Marriott Hotels & Resorts</li>
+                        <li>Residence Inn by Marriott</li>
+                 
+                    </ul>
+                    </li>
+                    <li><a href="contact.htm">Contact Us </a></li>
+                    <li><a href="about_me.htm">About Me</a></li>
+                    <li><a href="credit.htm">Credit</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+    </div>
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/hilton.jpg" alt='sfd' style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/1.jpg" alt='sfad' style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/Marriott-logo.png" alt='sdf' style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+<form action="mailer.php" method="post" onsubmit='return p3()'>
+    <fieldset>
+    <legend>Contact Information (optional)</legend>
+    <table style="margin-left:50px">
+    <tbody><tr><td class="ar">Your Name: </td><td><input type="text" name="YourName" size="30" id='name1'></td></tr>
+    <tr><td class="ar">EMail Address: </td><td><input type="text" name="email" size="30" ></td></tr>
+    <tr><td class="ar">Phone: </td><td><input type="text" name="phone" size="30" ></td></tr>
+    <tr><td>Perferred contact: </td><td style="padding-left:30px">EMail <input type="radio" name="pcontact" value="e"> Phone 
+        <input type="radio" name="pcontact" value="p"></td></tr>
+    </tbody></table>
+    </fieldset>
+    <p id='hi'>
+    Which hotel do you like best? (must choose)
+    <select name="satisfaction" id='sat'>
+        <option value="v">please select</option>
+        <option value="vs">Hilton</option>
+        <option value="s">Marriott</option>
+
+    </select></p>
+    <p>Please explain your choice above (optional):</p>
+    <p><textarea name="comments" rows="5" cols="60"></textarea></p>
+    <p>What aspect do you think is important (Select all that apply/optional)?
+    <br>
+    Room <input type="checkbox" name="kit" value="kitchen"> Dining Room <input type="checkbox" name="dr" value="dr">
+    Service <input type="checkbox" name="lr" value="lr"> Swimming Pool <input type="checkbox" name="of" value="office">
+    Other <input type="checkbox" name="other" value="other">
+    </p>
+    <p style="text-align:center"><input type="submit" name="Submit" value="Submit">&nbsp;&nbsp;&nbsp;<input type="reset" name="Reset" value="Reset"></p> 
+    </form>
+
+
+</body>
+</html>
+		

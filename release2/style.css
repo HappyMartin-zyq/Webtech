@@ -1,0 +1,198 @@
+body {
+    font-family: "Work Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #828282;
+    background: #fff;
+    background-image:url(data:image/jpeg;base64,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)
+        }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f5ecec8c;;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    font-size: medium;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .title {
+    font-size: 45px;
+    margin: 0;
+    color: #140e0eda;
+    padding: 0;
+  
+    left: 50%;
+    line-height: 40px;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .container {
+    position: relative;
+  }
+  div.a {
+    text-align: center;
+  }
+  
+  div.b {
+    text-align: left;
+  }
+  
+  div.c {
+    text-align: right;
+  } 
+  
+  div.d {
+    text-align: justify;
+  } 
+  
+  .topleft {
+    position: absolute;
+    top: 0%;
+    left: 2px;
+    font-size: 24px;
+  }
+  
+  img { 
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+  }
+  .topcenter {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .center {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+
+ * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
