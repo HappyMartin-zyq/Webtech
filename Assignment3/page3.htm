@@ -4,6 +4,7 @@
 
   <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<link href="jquery-ui.css" rel="stylesheet">
 	<title>Massachusetts</title>
 
 	<style>
@@ -13,7 +14,9 @@
 	.b {width:20%; background-color: yellow; padding:0px 10px;}
 	.c {font-style: italic;}
 	</style>
-	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="external/jquery/jquery.js"></script>
+	<script src="jquery-ui.js"></script>
+	
 	
 	<script>
 	/* Your JavaScript goes here */
@@ -51,8 +54,38 @@
 			</td>
 		</tr>
 	</table>
-	<p>Date: <input type="text" name="d"></p>
+	<p>Date: <input type="text" id="datepicker" name="d"></p>
 	<p id="p1">_________________<br />
 	Source: Wikipedia</p>
+	<script>
+		$( "#accordion" ).accordion();
+		
+		
+		
+		
+		
+		$( "#tabs" ).tabs();
+		
+		
+		$( "#datepicker" ).datepicker({
+			inline: true
+		});
+		
+		
+		
+		
+		
+		
+		
+		// Hover states on the static widgets
+		$( "#dialog-link, #icons li" ).hover(
+			function() {
+				$( this ).addClass( "ui-state-hover" );
+			},
+			function() {
+				$( this ).removeClass( "ui-state-hover" );
+			}
+		);
+		</script>
   </body>
 </html>
